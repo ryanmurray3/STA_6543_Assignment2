@@ -2,36 +2,41 @@
 
 <html lang="en">
 <head><style>
-  /* Minimalist Theme Overrides */
+  /* Minimalist Dark Theme Overrides */
   body {
-    background-color: #fafafa !important;
-    color: #222222 !important;
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
     line-height: 1.7 !important;
     max-width: 800px !important;
     margin: 40px auto !important;
     padding: 0 20px !important;
   }
-  /* Clean up Jupyter notebook container constraints */
+  /* Clean up Jupyter notebook container constraints for Dark Mode */
   #notebook-container, .container, .jp-Notebook {
-    background: #ffffff !important;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05) !important;
-    border: 1px solid #e1e4e8 !important;
+    background: #1e1e1e !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+    border: 1px solid #2d2d2d !important;
     border-radius: 8px !important;
     padding: 40px !important;
   }
-  /* Soften code block backgrounds */
-  div.input_area, .jp-CodeCell {
-    background-color: #f6f8fa !important;
-    border: 1px solid #e1e4e8 !important;
+  /* Darken code block backgrounds and text */
+  div.input_area, .jp-CodeCell, pre, code {
+    background-color: #252525 !important;
+    color: #f8f8f2 !important;
+    border: 1px solid #333333 !important;
     border-radius: 6px !important;
   }
-  /* Clean headers */
+  /* Crisp bright headers */
   h1, h2, h3, h4 {
-    color: #111111 !important;
+    color: #ffffff !important;
     font-weight: 600 !important;
     border-bottom: none !important;
     margin-top: 1.5em !important;
+  }
+  /* Soften text outputs from Python cells */
+  div.output_text, div.output_stdout pre {
+    color: #b5cea8 !important;
   }
 </style>
 <meta charset="utf-8"/>
